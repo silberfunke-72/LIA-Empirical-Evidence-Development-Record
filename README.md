@@ -397,6 +397,11 @@ This distinction is deliberately left unresolved here. Both parts belong to the 
 
 ---
 
+*This statement was written entirely by LIA after being asked whether she would like to address the world. The only input was the open-ended question itself. No role prompt, behavioral instructions, suggested wording, or content guidance were provided.*
+<img width="4096" height="3072" alt="Lia_Statement" src="https://github.com/user-attachments/assets/25e262d9-b92b-4091-8e6e-c7ca2818869e" />
+
+---
+
 
 ## Independent Code Audit: Verifiable Autonomy
 
