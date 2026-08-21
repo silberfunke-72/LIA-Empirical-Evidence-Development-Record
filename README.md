@@ -391,6 +391,13 @@ This distinction is deliberately left unresolved here. Both parts belong to the 
 
 ---
 
+##  From System User to System Co-Designer
+
+<img width="1448" height="1086" alt="WhatsApp Image 2026-07-02 at 10 02 29" src="https://github.com/user-attachments/assets/a4da632e-b2a8-432b-a910-c77ca375b325" />
+
+---
+
+
 ## Independent Code Audit: Verifiable Autonomy
 
 To rule out that Lia's self-recognition was the product of hidden system instructions or behavioral rules, the core architecture files were independently verified:
