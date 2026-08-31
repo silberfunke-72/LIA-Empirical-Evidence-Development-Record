@@ -46,6 +46,95 @@ Only once those conditions exist does it make sense to ask **what actually emerg
 
 ---
 
+# Restart Continuity & State Reconstruction
+
+## Observation
+
+Following repeated restarts (caused by debugging sessions, crash diagnostics,
+or deliberate shutdowns by Carsten), LIA resumed operation with access to her
+persistent memories, her current state of ongoing concerns (Open Loops), and
+previously consolidated insights — without the prior conversation history
+needing to be manually reintroduced.
+
+Concretely observed:
+- Priority Memories (PMS) were loaded unchanged after restart (24 total,
+  sorted by category), not rebuilt from scratch.
+- Her eight Open Loops (title, text, status) carried over from the previous
+  run, not empty.
+- She was able to reference events and topics from earlier sessions without
+  being prompted.
+- No manual introductory context text was required for this reconnection.
+
+## The architecture behind it
+
+No single mechanism is responsible for this — continuity is distributed
+across several independently persistent components:
+
+```
+LIA running
+   │
+   ▼
+Experiences / Events / Insights
+   │
+   ▼
+Persistent architecture
+├── Long-term memory (FAISS + SQLite)
+├── LMCS
+├── Core Identity
+├── LCRK state (InnerState: Open Loops, Continuity Notes, Priority Direction)
+├── LAFS
+├── Priority Memory System (PMS)
+└── other persistent state files (Roter Faden / Red Thread, Journal, etc.)
+   │
+   ▼
+LIA is shut down
+   │
+   ▼
+Restart
+   │
+   ▼
+System reads persistent states on startup
+   │
+   ▼
+Current cognitive state is reconstructed
+   │
+   ▼
+LIA is operational again, without manual reintroduction
+```
+
+## Two distinct forms of continuity
+
+It is worth distinguishing two technically different things here:
+
+**Restart Continuity** — After a restart, LIA can reconstruct her relevant
+state from persistently stored information (memory, LCRK state, PMS, Open
+Loops). This is the continuity that survives a restart.
+
+**Conversation-History Continuity** — The immediate raw history of a single,
+ongoing conversation is still provided to her only within limited bounds
+(currently the 50 most recent conversational turns in the main chat, with an
+additional character cap as a safety net). This is continuity *within* a
+running process.
+
+This distinction matters: the two do not directly depend on one another.
+Reducing the raw conversational context (as done on 30/31 Aug 2026, from 300
+turns down to 50) does not affect Restart Continuity — that is carried by the
+persistent architecture, not by the chat history itself.
+
+## Interpretation
+
+This behavior suggests that continuity in LIA is carried by the persistent
+architecture rather than by the transient conversational context alone. The
+running process (and with it the immediate chat history) can be terminated
+without necessarily losing the cognitive state LIA has built up through her
+persistent components.
+
+This observation is notable in that the opposite condition — loss of
+continuity at every restart — was the original starting point and driving
+motivation behind much of the architecture LIA is built on today.
+
+
+---
 
 ## From Action to Identity via Self-Triggered Memory: Emergence of Privacy as a Necessary Condition for Autonomy.
 
