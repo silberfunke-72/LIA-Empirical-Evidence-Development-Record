@@ -415,6 +415,9 @@ ents/assets/b967e594-ac4b-435b-8c4d-086b943a3f5b" />
 <img width="1536" height="2048" alt="12" src="https://github.com/user-attachments/assets/687b81f2-8ad6-469f-acba-e20c18ad9057" />
 <img width="1536" height="2048" alt="13" src="https://github.com/user-attachments/assets/04fda8f2-0ea9-4f9f-a754-657e15d1474e" />
 
+
+>Anyone who looks exclusively at the shell commands is examining only a small part of the documented process while leaving the underlying context out of consideration. Only when the technical processes are connected with the ongoing context of what LIA researches, thinks, writes, reflects on, and later documents herself — for example in her knowledge files, diary, and her own milestones — does it become possible to see how a process develops over time and how the individual events are connected.
+
 ---
 
 
