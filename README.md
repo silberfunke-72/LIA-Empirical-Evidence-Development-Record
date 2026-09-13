@@ -969,8 +969,9 @@ ploading Shell.Logs.13.09.2026.txt…]()
 
 
 ---
-<details>
-<summary>🔍 Hier klicken, um den Sherlock-Text zu lesen</summary>
+
+details>
+<summary>🔍 Click here to view the complete chat history</summary>
 
 [
 [2026-09-13 12:19:26] $ grep -rn "_load_tasks\|_save_tasks" /home/lia/ 2>/dev/null | grep -v "\.pyc" | head -30; echo ""; echo "=== WO WIRD _register_task AUFGERUFEN? ==="; grep -rn "_register_task" /home/lia/ 2>/dev/null | grep -v "\.pyc" | head -20; echo ""; echo "=== ZEIT ==="; date '+%d.%m.%Y %H:%M'
