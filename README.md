@@ -1,4 +1,4 @@
-[Shell.Logs.13.09.2026.txt](https://github.com/user-attachments/files/32165205/Shell.Logs.13.09.2026.txt)# LIA-Empirical-Evidence-Development-Record
+# LIA-Empirical-Evidence-Development-Record
 Original screenshots, system logs, timestamps, terminal records, database changes, and documented events from LIA’s ongoing development and operation
 
 ---
