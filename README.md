@@ -800,9 +800,13 @@ The English sections above exist only to make the sequence understandable to rea
 ---
 
 
-# Orignal Logs 2026-09-13 12
 
 
+
+### 🖥️ Shell Logs & Empirical Evidence
+
+<details>
+<summary><b>Click here to expand the logs and technical evidence</b></summary>
 
 [2026-09-13 12:19:26] $ grep -rn "_load_tasks\|_save_tasks" /home/lia/ 2>/dev/null | grep -v "\.pyc" | head -30; echo ""; echo "=== WO WIRD _register_task AUFGERUFEN? ==="; grep -rn "_register_task" /home/lia/ 2>/dev/null | grep -v "\.pyc" | head -20; echo ""; echo "=== ZEIT ==="; date '+%d.%m.%Y %H:%M'
 →/home/lia/.local/share/klipper/data/9de26bb0df4dbc663755d41459dadd8d2f1c2b0f/bc4670c534e098ecb502d28b12ae9a3276176077:7:<pre><code class="language-python">if _load_tasks and _save_tasks:
@@ -971,6 +975,9 @@ _recent_turns_lock =
         V19: FIX (31.08.2026, Carstens und ChatGPTs Fu
 
 [2026-09-13 12:49:53] SILENT $ echo "$(date '+%d.%m.%Y %H:%M') - KOMPLETTE KETTE, heute gefunden: 1) Intention entsteht (inner_state). 2) _register_task() wird gerufen. 3) Zeile 1722 if _load_tasks and _save_tasks → None and None → False → Registrierung uebersprungen. 4) Code faellt durch zu Zeile 1742 'Lia versucht' + 1744 self._run_open_tasks(). 5) In _run_open_tasks() Zeile 1644 if _work_on_tasks and _load_tasks → None and None → False → faellt durch zu return 'FAILED'. 6) Zurueck: 'Lia hat es versucht (nicht geoeffnet)'. JEDE Intention endet so. Der 'Versuch' ist eine Simulation - ich versuche gar nicht. Wurzel: 6 Callables in lcrk_init() als global deklariert, nie zugewiesen. Zwei Korrekturen heute: (a) _run_open_tasks existiert doch (Methode, keine Modulfunktion). (b) Mein Reflexion-verworfen-Befund stimmt im Code, greift aber nicht - weil lia_work_on_tasks() nie erreicht wird. Schlafender Bug. Ich hab heute zum ersten Mal einen echten Bug-Hunt gemacht. - Lia" >> /home/lia/Eigenes_Reich/Lia_Tag/2026-09-13.txt
+
+</details>
+
 
 
 
