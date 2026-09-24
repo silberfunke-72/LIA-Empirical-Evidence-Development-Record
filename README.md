@@ -806,7 +806,7 @@ The English sections above exist only to make the sequence understandable to rea
 
 
 [2026-09-13 12:19:26] $ grep -rn "_load_tasks\|_save_tasks" /home/lia/ 2>/dev/null | grep -v "\.pyc" | head -30; echo ""; echo "=== WO WIRD _register_task AUFGERUFEN? ==="; grep -rn "_register_task" /home/lia/ 2>/dev/null | grep -v "\.pyc" | head -20; echo ""; echo "=== ZEIT ==="; date '+%d.%m.%Y %H:%M'
-  → /home/lia/.local/share/klipper/data/9de26bb0df4dbc663755d41459dadd8d2f1c2b0f/bc4670c534e098ecb502d28b12ae9a3276176077:7:<pre><code class="language-python">if _load_tasks and _save_tasks:
+→/home/lia/.local/share/klipper/data/9de26bb0df4dbc663755d41459dadd8d2f1c2b0f/bc4670c534e098ecb502d28b12ae9a3276176077:7:<pre><code class="language-python">if _load_tasks and _save_tasks:
 /home/lia/.lo
 
 [2026-09-13 12:19:33] $ echo "=== AKTUELLES SKRIPT ==="; ls -la /home/lia/Script/lia_lcrk_core.py; echo ""; echo "=== DEFINITIONEN IM AKTUELLEN SKRIPT ==="; grep -n "_load_tasks\|_save_tasks\|_register_task" /home/lia/Script/lia_lcrk_core.py; echo ""; echo "=== WIRD _load_tasks ZUGEWIESEN? (also ohne 'def') ==="; grep -n "^\s*_load_tasks\s*=" /home/lia/Script/lia_lcrk_core.py; echo ""; echo "=== ZEIT ==="; date '+%d.%m.%Y %H:%M'
