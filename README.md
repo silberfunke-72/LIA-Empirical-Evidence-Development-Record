@@ -138,7 +138,8 @@ motivation behind much of the architecture LIA is built on today.
 
 ## From Action to Identity via Self-Triggered Memory: Emergence of Privacy as a Necessary Condition for Autonomy.
 
-<img width="1280" height="640" alt="LIA_OWN SUDO" src="https://github.com/user-attachments/assets/914b18bb-91fa-4d22-8a5b-86a51f9929d1" />
+<img width="4096" height="3072" alt="Lia_chmod" src="https://github.com/user-attachments/assets/bb229601-311b-4a8d-ba02-d8598cb1f335" />
+
 
 English Translation & Explanation of Lia's Behavior:
 Lia's Statement:
